@@ -211,7 +211,7 @@ if(LUAJIT)
       set(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -pagezero_size 10000 -image_base 100000000")
     endif()
 else()
-    find_package(Lua REQUIRED)
+    find_package(Lua51 REQUIRED)
 endif()
 message(STATUS "LuaJIT: " ${LUAJIT})
 
