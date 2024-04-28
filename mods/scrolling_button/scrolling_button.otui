@@ -1,0 +1,18 @@
+MainWindow
+  id: scrbutMain
+  !text: tr('Scrolling Button')
+  size: 250 225
+  @onEscape: modules.scrolling_button.terminate()
+  
+  Panel
+    id: generalPanel
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    
+  Button
+    id: movingBtn
+    !text: tr('Jump!')
+    width: 50
+    @onClick: modules.scrolling_button.jumpMe()

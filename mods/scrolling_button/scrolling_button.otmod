@@ -1,0 +1,12 @@
+Module
+  name: scrolling_button
+  description: Scrolling Button
+  author: Kevin Whitaker
+  website: -
+  version: 1
+  autoload: true
+  autoload-priority: 1000
+  sandboxed: true
+  scripts: [ scrolling_button ]
+  @onLoad: init()
+  @onUnload: terminate()
